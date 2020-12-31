@@ -2,94 +2,157 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="icon" href="logo.png"/>
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>portfolio</title>
 </head>
 <body>
+  <div class="shutter"></div>
+  <div class="menu-hide">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="menu-mobile">
+    <div class="menu-trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>  
+  </div>
+  <a href="https://twitter.com/HTMLCSS22246654"><i class="fab fa-twitter twitter-mobile"></i></a>
   <header>
-    <div class="header-in">
-      <div class="header-logo">
-        Name Name
-      </div>
-      <div class="header-list">
+
+    <div class="header-pc">
+      <div class="menu-pc">MENU</div>
+      <div class="header-pc-logo"><img src="logo.png" alt="ロゴ"></div>
+      <nav>
         <ul>
-          <li><a href="#top" class="header-list-item">top</a></li>
-          <li><a href="#about" class="header-list-item" >about</a></li>
-          <li><a href="#works" class="header-list-item" >works</a></li>
-          <li><a href="#contact" class="header-list-item" >contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
-    <div class="header-main" id="top">
-      <div class="header-main-container">
-        <h1>Name Name</h1>
-        <p>Welcome to my portfolio</p>
-      </div>
-    </div>
-    <div class="scrollBox">
-      <p>SCROLL</p>
-      <div class="scrollLine01"></div>
   </header>
+  <section class="content-false">
   <main>
-    <div class="about" id="about">
-      <h2>about</h2>
-      <div class="about-container">
-        <div class="about-left">
-          <div class="about-block">
-            <img src="https://pics.prcm.jp/590087fb24e4b/81448235/png/81448235_196x291.png" alt="">
-          </div>
+    <div class="home" id="home">
+      <div class="big-box">
+        <div class="box">
+        <p class="box-in1">Welcome</p>
+        </div><br>
+        <div class="box">
+          <p class="box-in1">to</p>
+        </div><br>
+        <div class="box">
+          <h1 class="box-in1">my portfolio</h1>
         </div>
-        <div class="about-right">
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+      <div class="scrollBox">
+        <p>SCROLL</p>
+        <div class="scrollLine01"></div>
+      </div>
+
+    </div>
+    <div class="service" id="service">
+      <div class="box-service">
+        <h2>service</h2>
+      </div>
+      <div class="service-items">
+        <div class="service-item service-item1">
+          <i class="fas fa-file-code service-item-icom"></i>
+          <h3>コーディング</h3>
+          <p>ご要望通りに丁寧にコーディング致します。jQueryを用いたアニメーションを実装することも可能です。</p>
+        </div>
+        <div class="service-item service-item2">
+          <i class="fas fa-laptop-code service-item-icom"></i>
+          <h3>サイト制作</h3>
+          <p>ヒアリングから完成までしっかりおこなって満足して頂けるようなWebサイト作りを目指します。</p>
+        </div>
+        <div class="service-item service-item3">
+          <i class="fas fa-mobile-alt service-item-icom"></i>
+          <h3>レスポンシブデザイン</h3>
+          <p>スマートフォンやタブレットなどでも快適に閲覧できるサイトを作ります。またレスポンシブ化のみのご依頼も承っております。</p>
         </div>
       </div>
     </div>
     <div class="works" id="works">
-      <h2>works</h2>
+      <div class="box-works">
+        <h2>works</h2>
+      </div>
       <div class="works-container">
-        <div class="works-item">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/o/osabecchi/20130426/20130426155704.png" alt="">
-          <a href="#"><p class="works-btn">このサイトを見る</p></a>
-        </div>
-        <div class="works-item">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/o/osabecchi/20130426/20130426155704.png" alt="">
-          <a href="#">
-            <p class="works-btn">このサイトを見る</p></a>
-        </div>
-        <div class="works-item">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/o/osabecchi/20130426/20130426155704.png" alt="">
-          <a href="#">
-            <p class="works-btn">このサイトを見る</p></a>
-        </div>
-        <div class="works-item">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/o/osabecchi/20130426/20130426155704.png" alt="">
-          <a href="#">
-            <p class="works-btn">このサイトを見る</p></a>
-        </div>
-        <div class="works-item">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/o/osabecchi/20130426/20130426155704.png" alt="">
-          <a href="#">
-            <p class="works-btn">このサイトを見る</p></a>
-        </div>
-        <div class="works-item">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/o/osabecchi/20130426/20130426155704.png" alt="">
-          <a href="#">
-            <p class="works-btn">このサイトを見る</p></a>
+        <div class="works-items">
+          <div class="works-item wi1">
+            <div class="works-hide">
+              <p><a href="https://eve86.github.io/item1/">このサイトを見る(pc推奨)</a></p>
+            </div>
+            <img src="1.png" alt="スクリーンショット">
+          </div>
+          <div class="works-item wi2">
+            <div class="works-hide">
+              <p><a href="https://eve86.github.io/test2/">このサイトを見る</a></p>
+            </div>
+            <img src="item3.png" alt="スクリーンショット">
+          </div>
+          <div class="works-item wi3">
+            <div class="works-hide">
+              <p><a href="https://eve86.github.io/blog/">このサイトを見る</a></p>
+            </div>
+            <img src="item2.png" alt="スクリーンショット">
+          </div>
+          <div class="works-item wi4">
+            <div class="works-hide">
+              <p><a href="https://eve86.github.io/code/">このサイトを見る</a></p>
+            </div>
+            <img src="item4.png" alt="スクリーンショット">
+          </div>
+          <div class="works-item wi5">
+            <div class="works-hide">
+              <p><a href="https://eve86.github.io/portfolioTest/">このサイトを見る</a></p>
+            </div>
+            <img src="webitem5.png" alt="スクリーンショット">
+          </div>
+          <div class="works-item wi6">
+            <div class="works-hide">
+              <p><a href="https://eve86.github.io/Search-Creators/">このサイトを見る</a></p>
+            </div>
+            <img src="webitem6.png" alt="スクリーンショット">
+          </div>
         </div>
       </div>
     </div>
     <div class="contact" id="contact">
-      <h2>contact</h2>
-      <p><a href="" class="contact-btn mail">メール</a></p>
-      <p><a href="" class="contact-btn twitter">twitter</a></p>
+      <div class="box-contact">
+        <h2>contact</h2>
+      </div>
+      <p>twitterのDMから<br>お気軽にお問い合わせ下さい</p>
+      <div class="twitter-wrapper">
+        <a href="https://twitter.com/HTMLCSS22246654"><i class="fab fa-twitter twitter"></i></a>
+        <div class="wave-circle w1">　</div>
+        <div class="wave-circle w2">　</div>
+        <div class="wave-circle w3">　</div>
+      </div>
+
     </div>
+    <footer>
+    <p>© 2020 Eve.</p>
+    </footer>
   </main>
-  <footer></footer>
+  </section>
+
 <script src="script.js"></script>
 <script src="particles.js"></script>
 <script src="setting.js"></script>
 </body>
 </html>
+
